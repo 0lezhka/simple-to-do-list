@@ -1,0 +1,6 @@
+<p>{{toDoListService.getRemaining()}} remaining</p>
+<ul>
+  <li *ngFor="let task of toDoListService.getFilteredList()">
+    <app-task [task]="task"></app-task>
+  </li>
+</ul>
